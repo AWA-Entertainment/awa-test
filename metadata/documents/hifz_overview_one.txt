@@ -1,0 +1,99 @@
+Tarteel - Hifz AI - Comprehensive Functionality Documentation
+=============================================================
+
+1. APP OVERVIEW
+---------------
+The "Tarteel - Hifz AI" app is a specialized Quran memorization assistant designed to help users memorize the Holy Quran effectively. It combines traditional listening methods with advanced AI-powered recitation correction. The app contains the entire Quran (all 114 Surahs) and offers offline capabilities.
+
+2. CORE MODES
+-------------
+The app operates in two primary modes, toggled via the Surah Detail screen:
+
+A. Normal (Listening) Mode:
+   - Purpose: For listening, reviewing, and familiarizing with the verses.
+   - Functionality: Plays the Qari's recitation of the selected Surah or range.
+   - Background Playback: Supports playing audio while the app is in the background or the screen is off.
+   - Adaptive Delay: An optional feature that automatically calculates the pause duration between Ayahs based on the length of the Ayah (longer Ayah = longer pause).
+
+B. Correction (Memorization) Mode:
+   - Purpose: For active memorization and testing pronunciation.
+   - Workflow:
+     1. Reference Playback: Optionally plays the Qari's recitation first.
+     2. Recording: The app listens via the microphone for the user to recite the specific Ayah.
+     3. AI Processing: Uses an on-device Machine Learning model (Whisper ONNX) to transcribe the user's speech.
+     4. Feedback: Compares the user's recitation against the actual Quranic text.
+        - Mistakes are highlighted in RED.
+        - Correct words are highlighted in GREEN.
+   - Auto-Advance: If no mistakes are found, it automatically moves to the next Ayah.
+   - Repeat Until Correct: A setting that forces the app to repeat the same Ayah loop until the user recites it without mistakes.
+   - Silence Detection: Automatically detects when the user stops speaking to stop recording and begin processing.
+
+3. PLAYBACK CONTROLS & CUSTOMIZATION
+------------------------------------
+The app provides extensive controls to tailor the learning experience:
+
+A. Audio Controls:
+   - Play/Pause: Standard media controls.
+   - Playback Speed: Adjustable speed from 0.5x to 2.0x.
+   - Delay Control: Manually set a fixed pause duration between Ayahs (0-100 units).
+   - Repeat Options:
+     - Single Ayah Repeat: Repeat the current Ayah a specific number of times (1-20).
+     - Surah/Range Repeat: Loop the entire selected range or Surah.
+
+B. Visual Customization:
+   - Font Size: Adjustable Arabic text size for readability.
+   - Quran Font Style: Selection of 7 different Arabic font scripts (e.g., Uthmanic, Indo-Pak/Naskh styles).
+   - Active Highlighting: The Ayah currently being played is magnified and centered on the screen.
+   - Hide Bismillah: Option to visually hide the Bismillah at the start of the list if desired.
+
+4. NAVIGATION & ORGANIZATION
+----------------------------
+A. Surah List:
+   - Lists all 114 Surahs with their number, name (Arabic/English), and metadata (Makki/Madani, Ayah count).
+   - Search: Filter Surahs by name or number.
+   - Download Status: Indicators show if a Surah is downloaded for offline use.
+   - Last Viewed: Highlights the last Surah and Ayah the user interacted with.
+
+B. Surah Detail Navigation:
+   - Scroll to Ayah: Auto-scrolls to the active Ayah during playback.
+   - Jump to Ayah: A specific input to instantly navigate to a specific Ayah number within the Surah.
+   - Range Selection: Users can define a specific "Start" and "End" Ayah to create a loop for focused memorization (e.g., memorizing verses 10-15).
+
+5. OFFLINE CAPABILITIES & DATA MANAGEMENT
+-----------------------------------------
+   - On-Demand Download: When a user opens a Surah for the first time, the app downloads the necessary audio and image assets.
+   - Storage Management:
+     - Users can delete data for a single Surah via a swipe action in the list.
+     - "Clear All Data" option in Settings to free up device storage.
+   - Offline Usage: Once downloaded, the Surah can be used entirely without an internet connection (including the AI Correction feature, which runs locally).
+
+6. USER ACCOUNT & SUBSCRIPTION (PREMIUM)
+----------------------------------------
+   - Free Tier:
+     - Limited daily plays/interactions.
+     - Cooldown timers after limits are reached.
+   - Premium Tier:
+     - Unlimited playback and correction usage.
+     - Access to all features without restrictions.
+   - Subscriptions: Managed via RevenueCat (Weekly, Monthly, Annual, Lifetime plans).
+   - Free Trial: Device-based eligibility check for a 24-hour free trial of premium features.
+
+7. SETTINGS & SUPPORT
+---------------------
+   - Feedback System: Built-in form to send feedback, bug reports, or feature requests directly to the developer (stored in Firestore).
+   - Account Actions: Options to Logout or Delete Account (GDPR compliance).
+   - Guides: "How to Use App" section with collapsible tutorials.
+   - Legal: Links to Privacy Policy and Terms of Use.
+
+8. TECHNICAL CONTEXT FOR AI
+---------------------------
+   - Platform: React Native (Expo).
+   - Audio Engine: `expo-audio` for playback, `expo-av` for recording.
+   - AI Model: OpenAI Whisper (Tiny, Quantized) running via ONNX Runtime on the device.
+   - Backend: Firebase Firestore (User data, Config), Firebase Storage (Media assets).
+   - State Management: React Context API (`PlaybackContext`, `UserContext`, `SurahsContext`).
+```
+
+<!--
+[PROMPT_SUGGESTION]How can I add a "Daily Goal" feature where users set a target number of Ayahs to memorize per day?[/PROMPT_SUGGESTION]
+[PROMPT_SUGGESTION]Can you help me implement a "Streak" counter that increments every day the user completes a correction session?[/PROMPT_SUGGESTION]

@@ -1,0 +1,100 @@
+APP NAME: Tarteel - Hifz AI
+TYPE: Quran Memorization Assistant
+PLATFORM: React Native (Expo)
+
+==============================================================================
+1. CORE PURPOSE & OVERVIEW
+==============================================================================
+The "Tarteel - Hifz AI" app is a specialized tool designed to assist users in memorizing the Holy Quran. It bridges the gap between traditional listening and active recitation practice. It contains the entire Quran (114 Surahs) and features a unique "Correction Mode" powered by on-device Artificial Intelligence to listen to the user's recitation and identify mistakes in real-time.
+
+==============================================================================
+2. CONTENT & DATA MANAGEMENT
+==============================================================================
+- Whole Quran: Access to all 114 Surahs.
+- On-Demand Download: To save storage, audio and image assets for a Surah are downloaded from the cloud (Firebase Storage) only when the user first opens that Surah.
+- Offline Access: Once downloaded, Surahs are available for offline playback and practice.
+- Data Clearing: Users can manage storage by deleting data for individual Surahs (via swipe action in the list) or clearing all cache from the Settings menu.
+
+==============================================================================
+3. PLAYBACK MODES
+==============================================================================
+The app operates in two distinct modes, toggleable via the UI:
+
+A. NORMAL MODE (Listening)
+   - Function: Plays high-quality audio recitations (e.g., Mishary Alafasy) for the user to listen and memorize.
+   - Background Playback: Audio continues playing when the app is in the background or the screen is locked.
+   - Auto-Scroll: The text list automatically scrolls to keep the currently playing Ayah in the center of the screen.
+   - Visuals: The active Ayah is magnified and highlighted.
+
+B. CORRECTION MODE (AI Assistant)
+   - Function: Acts as a teacher listening to the student.
+   - Workflow:
+     1. (Optional) Plays the reference audio for the current Ayah.
+     2. Activates the microphone to record the user's recitation.
+     3. Silence Detection: Automatically stops recording when the user stops speaking (VAD - Voice Activity Detection).
+     4. AI Processing: Uses an on-device Machine Learning model (Whisper ONNX) to transcribe the speech locally without sending audio to a server (privacy-focused).
+     5. Mistake Analysis: Compares the user's recitation against the actual Quranic text.
+   - Feedback:
+     - Correct words are highlighted in GREEN.
+     - Incorrect or missing words are highlighted in RED.
+   - Progression: If no mistakes are found, the app automatically advances to the next Ayah.
+
+==============================================================================
+4. PLAYBACK CONTROLS & SETTINGS
+==============================================================================
+The app offers granular control over how the Quran is played to suit different learning speeds:
+
+- Repeat Controls:
+  - Single Ayah Repeat: Repeat the current Ayah X times (1 to 20) before moving to the next.
+  - Ruku/Surah Repeat: Loop the entire Surah or the currently selected range.
+
+- Delay (Pause) Controls:
+  - Manual Delay: Set a fixed pause duration (in seconds) between Ayahs.
+  - Adaptive Delay (Dynamic): Automatically adjusts the pause duration based on the length of the Ayah (longer Ayah = longer pause), giving the user time to repeat it mentally.
+
+- Speed Control:
+  - Adjust playback speed from 0.5x (slow) to 2.0x (fast) without altering pitch.
+
+- Range Selection:
+  - Users can define a specific "Loop Range" (Start Ayah -> End Ayah). The player will only play and loop within this specific set of verses.
+
+- Correction Specific Settings:
+  - Repeat Until Correct: If enabled, the app will not move to the next Ayah until the user recites the current one perfectly.
+  - Play Reference Recitation: Toggle whether to hear the Qari before recording or jump straight to recording.
+  - Silence Detection: Toggle auto-stop for recording.
+
+==============================================================================
+5. VISUAL CUSTOMIZATION
+==============================================================================
+- Font Size: Users can increase or decrease the Arabic text size for better readability.
+- Font Family: Includes multiple Quranic script styles (e.g., Uthmanic, IndoPak, Naskh) to match the Mushaf the user is familiar with.
+- Hide Bismillah: Option to visually hide the Bismillah at the top of the list for continuity in certain reading styles.
+
+==============================================================================
+6. NAVIGATION
+==============================================================================
+- Search: Search for Surahs by name (English/Arabic) or number.
+- Jump to Ayah: A specific input to jump directly to an Ayah number within a Surah.
+- Tap to Play: Tapping any Ayah in the list immediately sets it as the active Ayah and starts playback/recording.
+- Last Viewed: The app remembers the last Surah and Ayah visited and highlights them in the list for quick resumption.
+
+==============================================================================
+7. USER SYSTEM & MONETIZATION
+==============================================================================
+- Authentication: Supports Anonymous login and Email/Password (via Firebase Auth).
+- Progress Tracking: Tracks daily usage and play counts.
+- Paywall & Subscriptions:
+  - Free Tier: Limited daily plays or trial period (e.g., 24 hours).
+  - Premium Tier: Unlocks unlimited playback, full access to Correction Mode, and removes restrictions.
+  - Subscriptions managed via RevenueCat (Weekly, Monthly, Yearly, Lifetime).
+
+==============================================================================
+8. TECHNICAL STACK (CONTEXT)
+==============================================================================
+- Framework: React Native with Expo.
+- Audio Engine: `expo-audio` (new module) / `expo-av` with custom logic for gapless-like sequencing.
+- AI Model: `onnxruntime-react-native` running a quantized Whisper model locally on the device.
+- Backend: Firebase Firestore (Database), Firebase Storage (Assets), Firebase Auth.
+- State Management: React Context (PlaybackContext, UserContext, SurahsContext).
+
+

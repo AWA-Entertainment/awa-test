@@ -1,0 +1,167 @@
+APP METADATA DOCUMENTATION
+==========================
+
+APP NAME
+--------
+iOS & Android: Tarteel - Hifz AI
+
+SUBTITLES & SHORT DESCRIPTIONS
+------------------------------
+Apple App Store Subtitle (Max 30 chars):
+Listen, Memorize, Fix Mistakes
+
+Google Play Short Description (Max 80 chars):
+Memorize Quran with AI feedback. Improve Tajweed and Hifz with real-time Tarteel.
+Listen & Memorize Quran. AI Tarteel correction to fix mistakes instantly.
+
+KEYWORDS (iOS Only - Max 100 chars)
+-----------------------------------
+quran,al quran,quran offline,quran for kids,tajweed,recitation,arabic,mushaf,surah,ayah,ترتيل,قرآن 
+quran,hifz,memorization,tarteel,ai,recitation,mistake,correction,offline,audio,listen,repeater,mushaf,tajweed
+
+
+APP DESCRIPTION (APPLE)
+----------------------------------
+Master Quran memorization (Hifz) with AI-powered mistake correction and real-time feedback.
+
+Tarteel - Hifz AI is your personal Quran companion, designed to bridge the gap between listening and active recitation. Whether you are revising a specific Surah or memorizing for the first time, our advanced AI listens to your recitation and provides real-time feedback, helping you correct mistakes instantly.
+
+Perfect for beginners, students, and families - our clean, distraction-free Mushaf interface makes Quran learning accessible and easy for kids and adults.
+
+
+AI-POWERED TARTEEL CORRECTION
+
+Act as your own teacher with our state-of-the-art AI assistant.
+
+- Real-Time Feedback: The app listens to your Arabic recitation and highlights mistakes in Red and correct words in Green
+- Privacy First: All AI processing happens offline on your device. Your voice data is never sent to the cloud
+- Silence Detection: Automatically stops recording when you finish an Ayah
+- Repeat Until Correct: Challenge yourself to loop an Ayah until you achieve perfect Tajweed
+
+
+ADVANCED AUDIO PLAYBACK
+
+Customize your listening experience to suit your learning speed.
+
+- Adaptive Delay: Automatically adjusts the pause between Ayahs based on their length
+- Custom Range Practice: Select specific verses (e.g., Ayah 10-15) to create focused loops
+- Loop & Repeat: Set custom ranges, repeat single Ayahs, or loop entire Surahs
+- Speed Control: Adjust playback speed from 0.5x to 2.0x
+- Background Play: Continue your Quran offline listening even when the screen is off
+
+
+COMPLETE QURAN LIBRARY
+
+- Full Access: All 114 Surahs with high-quality audio from expert Qaris
+- Offline Support: Download Surahs on-demand and practice anywhere without internet
+- Visual Comfort: Choose from 7 beautiful font scripts (Uthmanic, IndoPak, Naskh) and adjust text size
+- Smart Navigation: Search by Surah name or number and jump instantly to any Ayah
+
+
+PRIVACY & CONVENIENCE
+
+- No Sign-Up Required: Start using the app immediately with anonymous login
+- On-Device Processing: Your voice recordings stay on your device - never uploaded
+- Storage Management: Easily manage downloads to save space
+
+
+Perfect for families: Simple enough for children to use, yet powerful enough for serious Hafiz students. Join thousands of Muslims worldwide perfecting their Quran (قرآن) recitation and Tarteel (ترتيل) today.
+
+---
+
+Terms of Use: https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+
+
+APP DESCRIPTION (GOOGLE PLAY)
+----------------------------------
+
+Master Quran memorization (Hifz) with AI-powered mistake correction and real-time feedback.
+
+Tarteel - Hifz AI is your personal Quran companion, designed to bridge the gap between listening and active recitation.Whether you are revising a specific Surah or memorizing for the first time, our advanced AI listens to your recitation and provides real-time feedback, helping you correct mistakes instantly.
+
+Perfect for beginners, students, and families - our clean, distraction-free Mushaf interface makes Quran for kids and adults accessible and easy.
+
+
+✨ AI-POWERED TARTEEL CORRECTION
+
+Act as your own teacher with our state-of-the-art AI assistant.
+
+	•	Real-Time Feedback: The app listens to your Arabic recitation and highlights mistakes in Red and correct words in Green.
+	•	Privacy First: All AI processing happens offline on your device. Your voice data is never sent to the cloud.
+	•	Silence Detection: Automatically stops recording when you finish an Ayah.
+	•	Repeat Until Correct: Challenge yourself to loop an Ayah until you achieve perfect Tajweed.
+
+
+🎧 ADVANCED AUDIO PLAYBACK
+
+Customize your listening experience to suit your learning speed.
+
+	•	Adaptive Delay: Automatically adjusts the pause between Ayahs based on their length.
+	•	Custom Range Practice: Select specific verses (e.g., Ayah 10-15) to create focused loops.
+	•	Loop & Repeat: Set custom ranges, repeat single Ayahs, or loop entire Surahs.
+	•	Speed Control: Adjust playback speed from 0.5x to 2.0x.
+	•	Background Play: Continue your Quran offline listening even when the screen is off.
+
+
+📖 COMPLETE QURAN LIBRARY
+
+	•	Full Access: All 114 Surahs with high-quality audio from expert Qaris.
+	•	Offline Support: Download Surahs on-demand and practice anywhere without internet.
+	•	Visual Comfort: Choose from 7 beautiful font scripts (Uthmanic, IndoPak, Naskh) and adjust text size.
+	•	Smart Navigation: Search by Surah name/number and jump instantly to any Ayah.
+
+
+🔒 PRIVACY & CONVENIENCE
+
+	•	No Sign-Up Required: Start using the app immediately with anonymous login.
+	•	On-Device Processing: Your voice recordings stay on your device - never uploaded.
+	•	Storage Management: Easily manage downloads to save space.
+
+
+Perfect for Families: Simple enough for children to use, yet powerful enough for serious Hafiz students. Join thousands of Muslims worldwide perfecting their Quran (قرآن) recitation and Tarteel (ترتيل) today.
+
+SUPPORT URL
+-----------
+https://hifzsurahs.online/support
+
+SCREENSHOT TEXTS
+----------------
+1.png (Correction Mode)
+Title: AI-Powered Quran Correction
+Subtitle: Recite an Ayah and see mistakes instantly highlighted
+
+2.png (Overview)
+Title: Complete Quran Practice App
+Subtitle: Listen, recite, and refine your memorization
+
+3.png (Listening)
+Title: Learn Through Listening
+Subtitle: Build accuracy by hearing the Ayah first
+
+4.png (Surah List)
+Title: Complete Quran, Always Accessible
+Subtitle: All 114 Surahs with offline access
+
+5.png (Looping/Tarteel)
+Title: Focus Your Tarteel Sessions
+Subtitle: Select custom Ayah ranges to repeat
+
+6.png (Settings)
+Title: Personalize Your Experience
+Subtitle: Speed, font, and smart controls
+
+7.png (Testimonials)
+Title: Trusted by Thousands
+Subtitle: Join our global Hifz community
+
+8.png (Simple UI)
+Title: Simple and Easy Quran App
+Subtitle: Simple enough for kids, powerful for adults
+
+
+
+Privacy Policy:
+https://doc-hosting.flycricket.io/tarteel-hifz-ai-privacy-policy/defa15b0-ecc7-46fa-8777-cf650a0436b6/privacy
+
+Terms of Use:
+https://doc-hosting.flycricket.io/tarteel-hifz-ai-terms-of-use/7093cf56-a1d3-429e-8660-60cc71ccc2b9/terms
